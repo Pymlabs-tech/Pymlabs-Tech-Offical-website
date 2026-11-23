@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import { absoluteUrl } from '../config/site';
 import { findRoute } from '../data/routes';
+import { trackView } from '../lib/track';
 
 const setMeta = (selector: string, attr: string, value: string) => {
   const el = document.head.querySelector(selector);
@@ -19,6 +20,7 @@ export default function RouteEffects() {
   const first = useRef(true);
 
   useEffect(() => {
+    trackView(pathname);
     const meta = findRoute(pathname);
     document.title = meta.title;
     setMeta('meta[name="description"]', 'content', meta.description);

@@ -1,11 +1,13 @@
 import { site, whatsappUrl } from '../config/site';
 import WhatsAppIcon from './WhatsAppIcon';
+import { trackWhatsApp } from '../lib/track';
 
 /** Floating "chat on WhatsApp" button, bottom-right on every page. */
 export default function WhatsAppButton() {
   return (
     <a
       href={whatsappUrl()}
+      onClick={() => trackWhatsApp('floating')}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`Chat with ${site.brand} on WhatsApp (opens in a new tab)`}

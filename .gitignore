@@ -7,3 +7,6 @@ release
 !.env.example
 .taste-skill
 *.log
+
+# Admin credentials (server only, never commit)
+public/adminpymlabstech/config.php

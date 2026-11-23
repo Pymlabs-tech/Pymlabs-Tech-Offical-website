@@ -3,6 +3,7 @@ import ContactForm from '../components/ContactForm';
 import PageHero from '../components/PageHero';
 import Reveal from '../components/Reveal';
 import { site, whatsappUrl } from '../config/site';
+import { trackWhatsApp } from '../lib/track';
 import WhatsAppIcon from '../components/WhatsAppIcon';
 
 const next = [
@@ -47,6 +48,7 @@ export default function Contact() {
               <h2 className="text-[28px] tracking-[-0.03em]">WhatsApp</h2>
               <a
                 href={whatsappUrl()}
+                onClick={() => trackWhatsApp('contact')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-flex items-center gap-3 text-[19px] font-medium text-electric-600 hover:underline"

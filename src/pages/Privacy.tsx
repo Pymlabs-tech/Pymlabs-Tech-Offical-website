@@ -47,6 +47,9 @@ export default function Privacy() {
         </a>
         , and we see your name and phone number as WhatsApp shows them. This website only links to WhatsApp; it does
         not load any WhatsApp code.
+        {' '}To see how the site is used, we count page visits and clicks on the WhatsApp button. These counts are
+        anonymous: no cookies, no IP addresses and no third-party analytics are used. Your browser only remembers
+        that it has visited before, so a returning visitor is not counted twice.
       </p>
 
       <h2>How we use your information</h2>

@@ -1,6 +1,7 @@
 import { ArrowUpRight, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { site, whatsappUrl } from '../config/site';
+import { trackWhatsApp } from '../lib/track';
 import WhatsAppIcon from './WhatsAppIcon';
 import { legalNav, mainNav } from '../data/nav';
 import { services } from '../data/services';
@@ -63,6 +64,7 @@ export default function Footer() {
               </a>
               <a
                 href={whatsappUrl()}
+                onClick={() => trackWhatsApp('footer')}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`WhatsApp ${site.whatsapp.display} (opens in a new tab)`}
