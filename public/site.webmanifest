@@ -1,0 +1,13 @@
+{
+  "name": "PYMLABS TECHNOLOGY",
+  "short_name": "PYMLABS",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#060913",
+  "theme_color": "#060913",
+  "icons": [
+    { "src": "/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/logo-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
